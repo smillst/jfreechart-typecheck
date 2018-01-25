@@ -9,7 +9,7 @@ env:
 ## This is just to determine the time to do the background build.
 #  - GROUP=nothing
 
-script: ./.travis-build.sh $GROUP
+script: travis_wait 120 ./.travis-build.sh $GROUP
 
 git:
   depth: 3
