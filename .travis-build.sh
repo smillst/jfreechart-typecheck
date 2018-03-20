@@ -19,7 +19,7 @@ true
 export CHECKERFRAMEWORK=$ROOT/checker-framework
 
 ## Obtain guava
-(cd $ROOT && git clone --depth 1 -b index https://github.com/kelloggm/jfreechart.git)
+(cd $ROOT && git clone --depth 1 https://github.com/typetools/jfreechart.git)
 
 if [[ "$1" == "index" ]]; then
   (cd $ROOT/jfreechart/ant && ant check-index)
